@@ -2,6 +2,7 @@
 
 This is a script that I use in the curation of [Last Week in AWS](https://lastweekinaws.com). It will require tweaking for other purposes; in its current form it's gentle on the Pinboard API. Beating it to death with massive requests is a great way to enrage an already kind-yet-volatile man who underprices his service. Tread carefully. 
 
+![Architecture Diagram](https://static.quinnadvisory.com/architecture-newsletter1.jpg)
 It currently grabs all Pinboard bookmarks that are tagged with `current`. 
 
 In DynamoDB, the `current` tag is replaced with a number that's retrieved from the contents of an S3 object. 
