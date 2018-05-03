@@ -9,7 +9,6 @@ import sys
 from boto3.dynamodb.conditions import Key, Attr
 
 if os.getenv('INSIDE_LAMBDA') == "True":
-    import boto3
     from base64 import b64decode
     ENCRYPTED_PINBOARD_TOKEN = os.getenv('PINBOARD_TOKEN')
     PINBOARD_TOKEN = boto3.client('kms').decrypt(
