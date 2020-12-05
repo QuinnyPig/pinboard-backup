@@ -20,7 +20,7 @@ Note that there is a failure mode wherein the Pinboard API can return bad data t
 A DynamoDB table. An S3 object containing a number. A Python environment.  
 
 Should you be running this from within an AWS Lambda function, indicate so with an environment variable of `INSIDE_LAMBDA` set to `True`. 
-An Environment variable called `PINBOARD_TOKEN` should contain your Pinboard API token. If within a Lambdai function, this is expected to be KMS encrypted. Don't store access keys in plaintext; it's just not smart.
+An Environment variable called `PINBOARD_TOKEN` should contain your Pinboard API token. If within a Lambda function, this is expected to be KMS encrypted. Don't store access keys in plaintext; it's just not smart.
 
 
 
